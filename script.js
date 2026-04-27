@@ -9,3 +9,13 @@ menu_bt.addEventListener('click',()=>{
 close_bt.addEventListener('click',()=>{
     menu.classList.toggle('active');
 })
+
+const contact_bts = document.querySelectorAll('.contact-bt')
+
+contact_bts.forEach(
+    (bt)=>{
+        bt.addEventListener('click',()=>{
+            window.open("https://www.instagram.com/caio_shay123/", "_blank")
+        })
+    }
+)
