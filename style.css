@@ -19,7 +19,7 @@ body {
 #menu{
     height: calc(100% - 40px);
     width: 200px;
-    background-color: rgba(246, 0, 0, 0.8);
+    background-color: rgba(236, 0, 0, 0.8);
     z-index: 1000;
     position: fixed;
     left: -240px;
@@ -77,8 +77,8 @@ header{
 
 nav ul{
     display: flex;
-    column-gap: 20px;
-    list-style: none;
+    column-gap: 40px;
+    /* list-style: none; */
     align-items: center;
 }
 
@@ -140,7 +140,61 @@ footer{
     align-items: center;
 }
 
+section{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul.main li::marker{
+    color: rgb(0, 0, 0);
+}
+
+ul.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-position: inside;
+    gap: 15px;
+    padding: 15px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main-image img{
+    width: 80%;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 5px
+}
+
+.main-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+p{
+    text-align: center;
+}
+#close-bt{
+    color: white;
+}
 @media (max-width: 600px) {
+    li{
+        font-size: 14px;
+    }
+
+    .main-image img{
+        width: 100%;
+    }
     header{
         height: 40px;
         justify-content: flex-start;
