@@ -108,15 +108,33 @@ nav{
     border: 1px solid white;
 }
 
+@keyframes menu-bt_anim {
+    0% {
+        transform: scale(1.0);
+    }
+
+    33% {
+        transform: scale(1.1);
+    }
+
+    66% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
 #menu-bt{
     padding: 5px;
     height: 100%;
     width: 30px;
     border-radius: 5px;
     display: none;
+    box-shadow: 5px 5px 20px black;
+    animation: menu-bt_anim 8s ease infinite;
 }
-
-
 
 main {
     margin: 20px;
