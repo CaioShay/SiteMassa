@@ -120,6 +120,7 @@ nav{
 
 main {
     margin: 20px;
+    justify-content: center;
     padding: 20px;
     background-color: white;
     box-shadow: 5px 5px 20px rgba(0,0,0,.5);
@@ -176,10 +177,11 @@ h1{
     border-radius: 5px
 }
 
-.main-image{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius:  5px;
+    box-shadow: 5px 5px 20px black;
 }
 p{
     text-align: center;
